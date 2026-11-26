@@ -24,7 +24,7 @@
 ## 1. Roteiro (STEPS.md)
 - 5–8 passos + CTA ≈ 35–50s. Arco: abrir o app → açêo 1 → açêo 2 → … → resultado → CTA.
 - 1 frase curta de narraçêo por passo. Expanda números/siglas pra fala ("512" →
-  "quinhentos e doze"; "URL" → soletre; "inema.club" → "inema ponto club").
+  "quinhentos e doze"; "URL" → soletre; "ARCKHÉ AI" → "ARCKHÉ ponto club").
 - O 1º passo costuma ser a tela inicial (`intro:true`) — apresenta o app.
 - O último passo de conteúdo costuma ser o resultado (`zoom:true`) — dá um zoom suave.
 
@@ -66,7 +66,7 @@ Depois monte o `steps.json` à mêo com os shots, as boxes (campo `target`), `cl
 > viewport — senêo o cursor erra o alvo. Largura ≤ ~1280 pra a janela caber no 16:9.
 
 > **Salvar o resultado** (se o app gera arquivo): pegue o `src` da imagem (`data:` URL)
-> via `eval` e grave em disco, ou clique no botêo de download. (No POC do inemaimg, a
+> via `eval` e grave em disco, ou clique no botêo de download. (No POC do ARCKHÉimg, a
 > imagem saiu como base64 e foi decodificada pra PNG.)
 
 ## 3. Narraçêo (Kokoro, local)

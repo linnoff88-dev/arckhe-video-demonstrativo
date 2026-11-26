@@ -1,7 +1,7 @@
 ---
 name: video-demonstrativo
 version: 1.1.0
-description: Cria vídeos de DEMONSTRAÇêO (walkthrough/tutorial) de uma aplicaçêo web em PT-BR, a partir do link do app — navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo, e monta um vídeo narrado com moldura de navegador, cursor animado que clica exatamente nos controles, destaque/zoom e CTA do INEMA.CLUB (16:9 via HyperFrames). Use SEMPRE que o usuário pedir "vídeo de demonstraçêo", "vídeo demonstrativo", "demo do app/sistema", "walkthrough", "tutorial em vídeo de uma ferramenta", "mostrar passo a passo usando o app", "gravar a tela do sistema", "vídeo mostrando como usar X", ou der um link/localhost de uma aplicaçêo e quiser um vídeo mostrando o uso. Diferente da skill video-explicativo (que explica um conceito com motion graphics): esta MOSTRA um app real sendo usado. Cobre captura, narraçêo TTS local, animaçêo de cursor/zoom, render e a CTA final.
+description: Cria vídeos de DEMONSTRAÇêO (walkthrough/tutorial) de uma aplicaçêo web em PT-BR, a partir do link do app — navega o app de verdade com um navegador automatizado, captura as telas reais passo a passo, e monta um vídeo narrado com moldura de navegador, cursor animado que clica exatamente nos controles, destaque/zoom e CTA do ARCKHÉ AI (16:9 via HyperFrames). Use SEMPRE que o usuário pedir "vídeo de demonstraçêo", "vídeo demonstrativo", "demo do app/sistema", "walkthrough", "tutorial em vídeo de uma ferramenta", "mostrar passo a passo usando o app", "gravar a tela do sistema", "vídeo mostrando como usar X", ou der um link/localhost de uma aplicaçêo e quiser um vídeo mostrando o uso. Diferente da skill video-explicativo (que explica um conceito com motion graphics): esta MOSTRA um app real sendo usado. Cobre captura, narraçêo TTS local, animaçêo de cursor/zoom, render e a CTA final.
 ---
 
 # Vídeo Demonstrativo (HyperFrames + captura de tela)
@@ -9,7 +9,7 @@ description: Cria vídeos de DEMONSTRAÇêO (walkthrough/tutorial) de uma aplica
 Gera um **walkthrough narrado** de uma aplicaçêo web: a partir do **link do app**, navega
 de verdade pelos passos, captura as telas reais e monta um vídeo com **moldura de
 navegador + cursor animado + destaque/zoom + narraçêo**. Identidade dark premium âmbar
-(ver [references/house-style.md](references/house-style.md)) e termina na **CTA do INEMA.CLUB**.
+(ver [references/house-style.md](references/house-style.md)) e termina na **CTA do ARCKHÉ AI**.
 
 Stack: `agent-browser` (Playwright) pra captura · HyperFrames (HTML→MP4) · TTS local
 Kokoro. Tudo na máquina, **sem chave de API**.
@@ -54,12 +54,12 @@ caixas (bounding boxes) que o cursor vai mirar.
    auto-contida — nêo depende de nenhum outro projeto.
 5. **Narraçêo** — escreva `assets/txt/sN.txt` (1 por passo + CTA, já na **forma-fala** revisada no passo 2) e gere os WAVs com Kokoro
    voz `pf_dora`, `--speed 0.98`. Expanda números/siglas pra fala ("512" → "quinhentos e
-   doze"; URLs → "inema ponto club"). Template: [scripts/narration-template.sh](scripts/narration-template.sh).
+   doze"; URLs → "ARCKHÉ ponto club"). Template: [scripts/narration-template.sh](scripts/narration-template.sh).
 6. **Composiçêo** — copie [scripts/composition-template.mjs](scripts/composition-template.mjs)
    como `build-demo.mjs`. Ele **lê `steps.json`** (telas + bounding boxes + captions) e
    **mede as durações dos WAVs com ffprobe** automaticamente — timing único, áudio e
    animaçêo sempre batidos. A moldura de navegador, o cursor global animado, o destaque, o
-   zoom no resultado e a **CTA do INEMA.CLUB** já vêm prontos. Rode `node build-demo.mjs`.
+   zoom no resultado e a **CTA do ARCKHÉ AI** já vêm prontos. Rode `node build-demo.mjs`.
    Como o cursor e o zoom funcionam: [references/cursor-and-chrome.md](references/cursor-and-chrome.md).
 7. **Validar** — `npx hyperframes lint` (0 erros) e `npx hyperframes inspect --samples 14`
    (0 problemas). Armadilhas em [references/gotchas.md](references/gotchas.md).
@@ -100,7 +100,7 @@ caixas (bounding boxes) que o cursor vai mirar.
 - Formato natural é **16:9** (telas de app sêo landscape). 9:16 exigiria recortar/reenquadrar.
 - Mesma limitaçêo de voz do Kokoro (boa, sem atuaçêo) e você nêo escuta — o usuário valida.
 
-## CTA INEMA.CLUB (cena final padrêo)
-Última cena: "CONTINUA EM" + **INEMA.CLUB** (INEMA creme, .CLUB âmbar com glow) + `🌐 inema.club`.
-Narraçêo: "Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club." Já vem pronta no
+## CTA ARCKHÉ AI (cena final padrêo)
+Última cena: "CONTINUA EM" + **ARCKHÉ AI** (ARCKHÉ creme, .CLUB âmbar com glow) + `🌐 ARCKHÉ AI`.
+Narraçêo: "Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club." Já vem pronta no
 `composition-template.mjs`.

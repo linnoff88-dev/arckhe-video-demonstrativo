@@ -14,8 +14,8 @@
 //   "url":"http://localhost:8000/",
 //   "viewport":[1280,800],
 //   "window":{ "top":96, "titleH":52, "urlLabel":"localhost:8000" },
-//   "eyebrow":"DEMONSTRAÇÃO · INEMAIMG",
-//   "ctaNarration":"Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club.",
+//   "eyebrow":"DEMONSTRAÇÃO · ARCKHÉIMG",
+//   "ctaNarration":"Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club.",
 //   "steps":[
 //     { "id":"home", "intro":true, "shotBefore":true,
 //       "caption":"app · do zero", "narration":"Esse é o app..." },
@@ -95,8 +95,8 @@ const steps = {
   viewport: [VW, VH],
   window: CFG.window || { top: 96, titleH: 52, urlLabel: "localhost" },
   eyebrow: CFG.eyebrow || "DEMONSTRAÇÃO",
-  ctaNarration: CFG.ctaNarration || "Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club.",
-  ctaCaption: CFG.ctaCaption || "Mais conteúdo em inema.club",
+  ctaNarration: CFG.ctaNarration || "Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club.",
+  ctaCaption: CFG.ctaCaption || "Mais conteúdo em ARCKHÉ AI",
   steps: stepsOut,
 };
 writeFileSync(new URL("./steps.json", import.meta.url), JSON.stringify(steps, null, 2));

@@ -11,7 +11,7 @@ node -e '
 const fs=require("fs");
 const d=JSON.parse(fs.readFileSync("steps.json","utf8"));
 const lines=d.steps.map(s=>s.narration||"");
-lines.push(d.ctaNarration||"Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club.");
+lines.push(d.ctaNarration||"Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club.");
 lines.forEach((t,i)=>fs.writeFileSync(`assets/txt/s${i+1}.txt`, (t||"").trim()+"\n"));
 console.log("escrevi", lines.length, "txt (passos + CTA)");
 '

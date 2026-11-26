@@ -22,7 +22,7 @@ e pro TTS sem revisêo de acentuaçêo/ortografia).
 - Walkthrough narrado de aplicaçêo web: captura real com `agent-browser` (Playwright) + HyperFrames
   (HTML→MP4) + TTS local Kokoro (voz `pf_dora`), tudo na máquina, **sem chave de API**.
 - Moldura de navegador, **cursor global animado** mirando a **bounding box real** (`getBoundingClientRect`),
-  destaque/zoom no resultado e **CTA do INEMA.CLUB**.
+  destaque/zoom no resultado e **CTA do ARCKHÉ AI**.
 - Princípio "capturar antes, animar depois" (render determinístico); viewport fixo = espaço de coordenadas.
-- Pacote `.zip` da skill + curso INEMA.CLUB (landing + 3 trilhas / 10 módulos, GitHub Pages).
+- Pacote `.zip` da skill + curso ARCKHÉ AI (landing + 3 trilhas / 10 módulos, GitHub Pages).
 - Ajuste de saída: **sem cauda muda** (`ambientRepeat`) e **saída única** em `~/projetos/output/<nome>/`.

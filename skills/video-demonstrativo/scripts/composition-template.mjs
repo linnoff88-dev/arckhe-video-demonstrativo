@@ -3,7 +3,7 @@
 // Lê steps.json (telas + bounding boxes + captions + narração) e MEDE as
 // durações dos WAVs com ffprobe -> timing único, áudio e animação batidos.
 // Monta: moldura de navegador + screenshot por passo + cursor global animado
-// (mira a bbox real) + destaque + zoom no resultado + CTA INEMA.CLUB.
+// (mira a bbox real) + destaque + zoom no resultado + CTA ARCKHÉ AI.
 //
 // COMO USAR:
 //   1. Gere assets/shots/*.png e steps.json com capture.mjs (ou na mão).
@@ -14,7 +14,7 @@
 // {
 //   "viewport":[1280,800],
 //   "window":{ "top":96, "titleH":52, "urlLabel":"localhost:8000" },
-//   "ctaNarration":"Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club.",
+//   "ctaNarration":"Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club.",
 //   "steps":[
 //     {"shot":"00-home.png","intro":true,"target":null,"click":false,"caption":"..."},
 //     {"shot":"02-size.png","target":{"x":179,"y":501,"w":44,"h":26},"click":true,"caption":"..."},
@@ -65,7 +65,7 @@ const HOT = { x: 6, y: 3 }; // ponta do cursor
 
 // monta uma lista de "cenas": os passos + a CTA no fim
 const SCENES = STEPS.map((st) => ({ ...st, kind: "step" }));
-SCENES.push({ kind: "cta", caption: DATA.ctaCaption || "Mais conteúdo em inema.club" });
+SCENES.push({ kind: "cta", caption: DATA.ctaCaption || "Mais conteúdo em ARCKHÉ AI" });
 
 function hlHTML(st, id){
   if(!st.target) return "";
@@ -77,9 +77,9 @@ function sceneInner(sc, i){
     return `
       <div class="cta-cover"></div>
       <div class="cta-eyebrow" id="s${i}-eye">CONTINUA EM</div>
-      <div class="cta-brand" id="s${i}-brand"><span class="b1">INEMA</span><span class="bdotsep">.</span><span class="b2">CLUB</span></div>
+      <div class="cta-brand" id="s${i}-brand"><span class="b1">ARCKHÉ</span><span class="bdotsep">.</span><span class="b2">CLUB</span></div>
       <div class="cta-rule" id="s${i}-rule"></div>
-      <div class="cta-url mono" id="s${i}-url"><span class="cta-globe">🌐</span>inema.club</div>`;
+      <div class="cta-url mono" id="s${i}-url"><span class="cta-globe">🌐</span>ARCKHÉ AI</div>`;
   }
   const intro = sc.intro ? `<div class="intro-eyebrow" id="s${i}-eye"><span class="dot"></span>${(DATA.eyebrow||"DEMONSTRAÇÃO").toUpperCase()}</div>` : "";
   const zoom = sc.zoom ? ` id="shot-zoom-${i}"` : "";

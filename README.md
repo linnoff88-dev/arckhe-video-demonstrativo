@@ -8,10 +8,10 @@
 
 Skill do Claude Code que gera **vêÂ­deos de demonstraêÂ§êÂ£o (walkthrough) de uma aplicaêÂ§êÂ£o web a partir do link do app**.
 
-VocêÂª dêÂ¡ a URL. O Claude Code navega o app **de verdade** com um navegador automatizado, captura as **telas reais** passo a passo e monta um vêÂ­deo narrado em PT-BR com **moldura de navegador, cursor animado, destaque/zoom** e a CTA do INEMA.CLUB. Tudo na mêÂ¡quina ê¢â¬â **sem chave de API**.
+VocêÂª dêÂ¡ a URL. O Claude Code navega o app **de verdade** com um navegador automatizado, captura as **telas reais** passo a passo e monta um vêÂ­deo narrado em PT-BR com **moldura de navegador, cursor animado, destaque/zoom** e a CTA do ARCKHÉ AI. Tudo na mêÂ¡quina ê¢â¬â **sem chave de API**.
 
-- ê°Å¸ââ **Guia de uso:** https://inematds.github.io/video-demonstrativo/guia/
-- ê°Å¸Å½â **Curso completo** (3 trilhas, 10 mêÂ³dulos): https://inematds.github.io/skill-video-demonstrativo/
+- ê°Å¸ââ **Guia de uso:** https://linnoff88-dev.github.io/arckhe-/guia/
+- ê°Å¸Å½â **Curso completo** (3 trilhas, 10 mêÂ³dulos): https://linnoff88-dev.github.io/arckhe-/
 
 Diferente da skill `video-explicativo` (que explica um conceito com motion graphics): esta **mostra um app real sendo usado**.
 
@@ -77,7 +77,7 @@ PrêÂ©-requisitos: Node 22+, FFmpeg, `npx hyperframes browser ensure`, `pip 
 
 ---
 
-ConteêÂºdo do [INEMA.CLUB](https://inema.club).
+ConteêÂºdo do [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 

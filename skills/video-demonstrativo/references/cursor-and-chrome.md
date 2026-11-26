@@ -44,7 +44,7 @@ real** (`getBoundingClientRect`) — é o que faz o cursor cair exato no botêo/
 ## Zoom no resultado
 - No passo marcado `zoom:true`, o `<img>` recebe `scale: 1 → 1.12` ao longo da narraçêo,
   com `transformOrigin` no **centro do alvo** (ex.: o painel de resultado). Dá um leve
-  push-in cinematográfico no momento do "tcharam".
+  push-in cARCKHÉtográfico no momento do "tcharam".
 
 ## Ritmo recomendado
 - LEAD 0.5s (cena aparece antes da voz), TAIL 0.7s, FADE 0.4s entre cenas.
