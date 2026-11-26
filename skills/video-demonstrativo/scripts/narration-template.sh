@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Gera os WAVs da narração a partir do steps.json (1 por passo + CTA).
+# Gera os WAVs da narraçêo a partir do steps.json (1 por passo + CTA).
 # Lê steps[].narration e ctaNarration; voz Kokoro pf_dora (PT-BR).
 # Uso: rode na raiz do projeto de vídeo (onde está steps.json e assets/).
 set -e

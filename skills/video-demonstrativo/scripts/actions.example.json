@@ -2,7 +2,7 @@
   "url": "http://localhost:8000/",
   "viewport": [1280, 800],
   "window": { "top": 96, "titleH": 52, "urlLabel": "localhost:8000" },
-  "eyebrow": "DEMONSTRAÇÃO · INEMAIMG",
+  "eyebrow": "DEMONSTRAÇêO · INEMAIMG",
   "ctaNarration": "Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club.",
   "ctaCaption": "Mais conteúdo em inema.club",
   "steps": [
@@ -10,7 +10,7 @@
       "id": "home",
       "intro": true,
       "caption": "inemaimg · gerando uma imagem do zero",
-      "narration": "Esse é o inemaimg, um playground de geração de imagem. Vamos criar uma do zero, em poucos cliques."
+      "narration": "Esse é o inemaimg, um playground de geraçêo de imagem. Vamos criar uma do zero, em poucos cliques."
     },
     {
       "id": "prompt",
